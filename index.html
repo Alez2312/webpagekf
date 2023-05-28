@@ -10,7 +10,7 @@
     <title>Kódigo Fuente S.A.S</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="assets/img/arbol_blanco_fondo_azul_oscuro.png" />
     <script data-search-pseudo-elements defer
         src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"
@@ -24,17 +24,24 @@
                 <!-- Navbar-->
                 <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-light fixed-top">
                     <div class="container px-5">
-                        <a class="navbar-brand text-primary" href="index.html">KÓDIGO FUENTE S.A.S</a>
+                        <a class="navbar-brand text-primary" href="index.html">
+                            <img src="./assets/img/colores_sin_fondo.png" alt="">
+                        </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto me-lg-5">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item dropdown dropdown-xl no-caret">
+                                    <a class="nav-link dropdown-toggle" href="page-help-knowledgebase.html">
+                                        Blog
+                                        <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                    </a>
+                                </li>
                                 <li class="nav-item dropdown dropdown-xl no-caret">
                                     <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button"
                                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Landings
+                                        Servicios
                                         <i class="fas fa-chevron-right dropdown-arrow"></i>
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-end animated--fade-in-up me-lg-n25 me-xl-n15"
@@ -55,11 +62,12 @@
                                             <div class="col-lg-7 p-lg-5">
                                                 <div class="row">
                                                     <div class="col-lg-6">
-                                                        <h6 class="dropdown-header text-primary">Applications</h6>
-                                                        <a class="dropdown-item" href="landing-app-mobile.html">Mobile
-                                                            App</a>
-                                                        <a class="dropdown-item" href="landing-app-desktop.html">Desktop
-                                                            App</a>
+                                                        <a class="dropdown-item"
+                                                            href="landing-app-mobile.html">Facturación POS</a>
+                                                        <a class="dropdown-item"
+                                                            href="landing-app-desktop.html">Facturación electrónica</a>
+                                                        <a class="dropdown-item"
+                                                            href="landing-app-desktop.html">Software Administrativo</a>
                                                         <div class="dropdown-divider border-0 d-lg-none"></div>
                                                     </div>
                                                 </div>
@@ -68,84 +76,24 @@
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown dropdown-xl no-caret">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdownPages" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Pages
+                                    <a class="nav-link dropdown-toggle" href="page-help-message-center.html">
+                                        Acerca de
                                         <i class="fas fa-chevron-right dropdown-arrow"></i>
                                     </a>
-                                    <div class="dropdown-menu dropdown-menu-end me-lg-n20 me-xl-n15 animated--fade-in-up"
-                                        aria-labelledby="navbarDropdownPages">
-                                        <div class="row g-0">
-                                            <div class="col-lg-4 p-lg-5">
-                                                <h6 class="dropdown-header text-primary">Company</h6>
-                                                <a class="dropdown-item" href="page-company-about.html">About</a>
-                                                <a class="dropdown-item" href="page-company-contact.html">Contact</a>
-                                                <div class="dropdown-divider border-0"></div>
-                                                <h6 class="dropdown-header text-primary">Support</h6>
-                                                <a class="dropdown-item"
-                                                    href="page-help-knowledgebase.html">Knowledgebase</a>
-                                                <a class="dropdown-item" href="page-help-message-center.html">Message
-                                                    Center</a>
-                                                <div class="dropdown-divider border-0 d-lg-none"></div>
-                                            </div>
-                                            <div class="col-lg-4 p-lg-5">
-                                                <h6 class="dropdown-header text-primary">Error</h6>
-                                                <a class="dropdown-item" href="page-error-400.html">400 Error</a>
-                                                <a class="dropdown-item" href="page-error-401.html">401 Error</a>
-                                                <a class="dropdown-item" href="page-error-404-1.html">404 Error (Option
-                                                    1)</a>
-                                                <a class="dropdown-item" href="page-error-404-2.html">404 Error (Option
-                                                    2)</a>
-                                                <a class="dropdown-item" href="page-error-500.html">500 Error</a>
-                                                <a class="dropdown-item" href="page-error-503.html">503 Error</a>
-                                                <a class="dropdown-item" href="page-error-504.html">504 Error</a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </li>
-                                <li class="nav-item dropdown no-caret">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdownDocs" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Documentation
+                                <li class="nav-item dropdown dropdown-xl no-caret">
+                                    <a class="nav-link dropdown-toggle"
+                                        href="https://docusaurus.io/docs/installation#scaffold-project-website">
+                                        Manual
                                         <i class="fas fa-chevron-right dropdown-arrow"></i>
                                     </a>
-                                    <div class="dropdown-menu dropdown-menu-end animated--fade-in-up"
-                                        aria-labelledby="navbarDropdownDocs">
-                                        <a class="dropdown-item py-3"
-                                            href="https://docs.startbootstrap.com/sb-ui-kit-pro/quickstart"
-                                            target="_blank">
-                                            <div class="icon-stack bg-primary-soft text-primary me-4"><i
-                                                    data-feather="book-open"></i></div>
-                                            <div>
-                                                <div class="small text-gray-500">Documentation</div>
-                                                Usage instructions and reference
-                                            </div>
-                                        </a>
-                                        <div class="dropdown-divider m-0"></div>
-                                        <a class="dropdown-item py-3"
-                                            href="https://docs.startbootstrap.com/sb-ui-kit-pro/components"
-                                            target="_blank">
-                                            <div class="icon-stack bg-primary-soft text-primary me-4"><i
-                                                    data-feather="code"></i></div>
-                                            <div>
-                                                <div class="small text-gray-500">Components</div>
-                                                Code snippets and reference
-                                            </div>
-                                        </a>
-                                        <div class="dropdown-divider m-0"></div>
-                                        <a class="dropdown-item py-3"
-                                            href="https://docs.startbootstrap.com/sb-ui-kit-pro/changelog"
-                                            target="_blank">
-                                            <div class="icon-stack bg-primary-soft text-primary me-4"><i
-                                                    data-feather="file-text"></i></div>
-                                            <div>
-                                                <div class="small text-gray-500">Changelog</div>
-                                                Updates and changes
-                                            </div>
-                                        </a>
-                                    </div>
                                 </li>
                             </ul>
+
+                            <a class="btn fw-500 ms-lg-4 btn-teal" href="page-company-contact.html">
+                                Contacto
+                                <i class="ms-2" data-feather="arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </nav>
@@ -164,7 +112,7 @@
                                     </p>
                                     <div class="d-flex flex-column flex-sm-row">
                                         <a class="btn btn-lg btn-primary fw-500 me-sm-3 mb-3 mb-sm-0" href="#explore">
-                                            LEER MÁS
+                                            CONOCE MÁS
                                             <i class="ms-2" data-feather="arrow-right"></i>
                                         </a>
                                         <!-- <a class="btn btn-lg btn-primary-soft text-primary fw-500"
@@ -218,7 +166,7 @@
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8">
                                 <div class="text-center mb-10">
-                                    <h2>Nuestras Soluciones Para Ti</h2>
+                                    <h2>Nuestros Servicios</h2>
                                     <p class="lead">Ofrecemos servicios de facturación para profesionales
                                         independientes, establecimientos comerciales de todo tipo con sistemas de venta
                                         al por mayor y detal e incluso, integración de sistemas de facturación propios
@@ -226,60 +174,176 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row gx-5">
-                            <div class="col-lg-4 mb-5">
-                                <div class="list-group text-lg text-center shadow align-items-center h-100">
-                                    <i class="fas fa-file fa-lg mt-2" style="color: #49c0b6;"></i>
-                                    <h4>
-                                        <a class="d-flex p-3" href="page-basic.html">
-                                            Facturación POS
+                        <section class="bg-light py-10">
+                            <div class="container px-5">
+                                <div class="row gx-5 mb-5">
+                                    <div class="col-lg-4 mb-5">
+                                        <a class="card card-link border-bottom-0 border-start-0 border-end-0 border-top-lg border-primary lift text-center o-visible h-100"
+                                            href="#!">
+                                            <div class="card-body">
+                                                <div
+                                                    class="icon-stack icon-stack-xl bg-primary-soft text-primary mb-4 mt-n5 z-1 shadow">
+                                                    <i class="fas fa-file fa-lg" style="color: #49c0b6;"></i>
+                                                </div>
+                                                <h5>Facturación POS</h5>
+                                                <p class="card-text">Al alcance de unos pocos clicks o incluso sin mouse
+                                                    (opcional), así de rápido es fácturar con nuestro software para
+                                                    facturación.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-primary fw-bold d-inline-flex align-items-center">
+                                                    Más información
+                                                    <i class="fas fa-arrow-right text-xs ms-1"></i>
+                                                </div>
+                                            </div>
                                         </a>
-                                    </h4>
-                                    <p>Al alcance de unos pocos clicks o incluso sin mouse (opcional), así de rápido es
-                                        fácturar con nuestro software para facturación.</p>
+                                    </div>
+                                    <div class="col-lg-4 mb-5">
+                                        <a class="card card-link border-bottom-0 border-start-0 border-end-0 border-top-lg border-primary lift text-center o-visible h-100"
+                                            href="#!">
+                                            <div class="card-body">
+                                                <div
+                                                    class="icon-stack icon-stack-xl bg-primary-soft text-primary mb-4 mt-n5 z-1 shadow">
+                                                    <i class="fas fa-qrcode fa-lg" style="color: #49c0b6;"></i>
+                                                </div>
+                                                <h5>Facturación electrónica</h5>
+                                                <p class="card-text">Crear y administra toda tus facturas desde un mismo
+                                                    lugar. Factura electrónicamente y POS desde el mismo software.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-primary fw-bold d-inline-flex align-items-center">
+                                                    Más información
+                                                    <i class="fas fa-arrow-right text-xs ms-1"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 mb-5">
+                                        <a class="card card-link border-bottom-0 border-start-0 border-end-0 border-top-lg border-primary lift text-center o-visible h-100"
+                                            href="#!">
+                                            <div class="card-body">
+                                                <div
+                                                    class="icon-stack icon-stack-xl bg-primary-soft text-primary mb-4 mt-n5 z-1 shadow">
+                                                    <i class="fas fa-code fa-lg" style="color: #49c0b6;"></i>
+                                                </div>
+                                                <h5>Facturación electrónica para desarrolladores</h5>
+                                                <p class="card-text">Integra tu própio sistema de ventas POS a
+                                                    facturación electrónica fácil y rápido.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-primary fw-bold d-inline-flex align-items-center">
+                                                    Más información
+                                                    <i class="fas fa-arrow-right text-xs ms-1"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 mb-5">
-                                <div class="list-group text-lg text-center shadow align-items-center h-100">
-                                    <i class="fas fa-qrcode fa-lg mt-2" style="color: #49c0b6;"></i>
-                                    <h4><a class="d-flex p-3" href="page-basic.html">
-                                            Facturación electrónica
-                                        </a></h4>
-                                    <p>Crear y administra toda tus facturas desde un mismo lugar. Factura
-                                        electrónicamente y POS desde el mismo software.</p>
+                            <div class="svg-border-rounded text-light">
+                                <!-- Rounded SVG Border-->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34"
+                                    preserveAspectRatio="none" fill="currentColor">
+                                    <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0">
+                                    </path>
+                                </svg>
+                            </div>
+                        </section>
+                        <section class="bg-white-25 py-10">
+                            <div class="container-testimonials">
+                                <div class="testimonials">
+                                    <div class="testimonial">
+                                        <img src="./assets/img/favicon.png" width="50" height="50" alt="Testimonial 1">
+                                        <h3>John Doe</h3>
+                                        <span>Company A</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vitae
+                                            molestias unde perspiciatis explicabo molestiae adipisci ab sapiente ad,
+                                            numquam, minima voluptatum! Animi sapiente consequuntur exercitationem ea,
+                                            illum odit odio!
+                                        </p>
+                                    </div>
+                                    <div class="testimonial">
+                                        <img src="./assets/img/favicon.png" width="50" height="50" alt="Testimonial 2">
+                                        <h3>Jane Smith</h3>
+                                        <span>Company B</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vitae
+                                            molestias unde perspiciatis explicabo molestiae adipisci ab sapiente ad,
+                                            numquam, minima voluptatum! Animi sapiente consequuntur exercitationem ea,
+                                            illum odit odio!
+                                        </p>
+                                    </div>
+                                    <div class="testimonial">
+                                        <img src="./assets/img/favicon.png" width="50" height="50" alt="Testimonial 3">
+                                        <h3>Jane Smith</h3>
+                                        <span>Company C</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vitae
+                                            molestias unde perspiciatis explicabo molestiae adipisci ab sapiente ad,
+                                            numquam, minima voluptatum! Animi sapiente consequuntur exercitationem ea,
+                                            illum odit odio!
+                                        </p>
+                                    </div>
+                                    <div class="testimonial">
+                                        <img src="./assets/img/favicon.png" width="50" height="50" alt="Testimonial 4">
+                                        <h3>Jane Smith</h3>
+                                        <span>Company D</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vitae
+                                            molestias unde perspiciatis explicabo molestiae adipisci ab sapiente ad,
+                                            numquam, minima voluptatum! Animi sapiente consequuntur exercitationem ea,
+                                            illum odit odio!
+                                        </p>
+                                    </div>
+                                    <div class="testimonial">
+                                        <img src="./assets/img/favicon.png" width="50" height="50" alt="Testimonial 1">
+                                        <h3>John Doe</h3>
+                                        <span>Company A</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vitae
+                                            molestias unde perspiciatis explicabo molestiae adipisci ab sapiente ad,
+                                            numquam, minima voluptatum! Animi sapiente consequuntur exercitationem ea,
+                                            illum odit odio!
+                                        </p>
+                                    </div>
+                                    <div class="testimonial">
+                                        <img src="./assets/img/favicon.png" width="50" height="50" alt="Testimonial 2">
+                                        <h3>Jane Smith</h3>
+                                        <span>Company B</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vitae
+                                            molestias unde perspiciatis explicabo molestiae adipisci ab sapiente ad,
+                                            numquam, minima voluptatum! Animi sapiente consequuntur exercitationem ea,
+                                            illum odit odio!
+                                        </p>
+                                    </div>
+                                    <div class="testimonial">
+                                        <img src="./assets/img/favicon.png" width="50" height="50" alt="Testimonial 3">
+                                        <h3>Jane Smith</h3>
+                                        <span>Company C</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vitae
+                                            molestias unde perspiciatis explicabo molestiae adipisci ab sapiente ad,
+                                            numquam, minima voluptatum! Animi sapiente consequuntur exercitationem ea,
+                                            illum odit odio!
+                                        </p>
+                                    </div>
+                                    <div class="testimonial">
+                                        <img src="./assets/img/favicon.png" width="50" height="50" alt="Testimonial 4">
+                                        <h3>Jane Smith</h3>
+                                        <span>Company D</span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vitae
+                                            molestias unde perspiciatis explicabo molestiae adipisci ab sapiente ad,
+                                            numquam, minima voluptatum! Animi sapiente consequuntur exercitationem ea,
+                                            illum odit odio!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="arrows">
+                                    <button id="prev-button" class="arrow">
+                                        <i class="fas fa-chevron-left dropdown-arrow"></i>
+                                    </button>
+                                    <button id="next-button" class="arrow">
+                                        <i class="fas fa-chevron-right dropdown-arrow"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="col-lg-4 mb-5">
-                                <div class="list-group text-lg text-center shadow align-items-center h-100">
-                                    <i class="fas fa-code fa-lg mt-2" style="color: #49c0b6;"></i>
-                                    <h4><a class="d-flex p-3" href="page-basic.html">
-                                            Facturación electrónica para desarrolladores
-                                        </a></h4>
-                                    <p>Integra tu própio sistema de ventas POS a facturación electrónica fácil y rápido.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="svg-border-rounded text-light">
-                        <!-- Rounded SVG Border-->
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
-                            fill="currentColor">
-                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-                        </svg>
-                    </div>
-                </section>
-                <section class="bg-black py-10">
-                    <div class="svg-border-rounded text-black">
-                        <h1 class="text-center text-white">Imagen...</h1>
-                        <!-- Rounded SVG Border-->
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
-                            fill="currentColor">
-                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-                        </svg>
-                    </div>
-                </section>
-                <!-- <section class="bg-white py-10">
+                        </section>
+                        <!-- <section class="bg-white py-10">
                     <div class="container px-5">
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-8">
@@ -321,69 +385,75 @@
                         </svg>
                     </div>
                 </section> -->
-                <section id="contacto" class="contact-form">
-                    <div class="container">
-                        <div class="contacts12-main">
-                            <div class="text-center lead pt-5">
-                                <h2 class="section-title">¡Contáctanos!</h2>
-                            </div>
-                            <div class="row main-cont-wthree-2 mt-5">
-                                <div class="col-lg-6 feature-grid-right">
-                                    <h1 class="">Imagen...</h1>
-                                    <!-- <img src="assets/images/s2.png" class="img-fluid img-shadow" alt="services"> -->
+                        <section id="contacto" class="contact-form">
+                            <div class="container">
+                                <div class="contacts12-main">
+                                    <div class="text-center lead pt-5">
+                                        <h2 class="section-title">¡Contáctanos!</h2>
+                                    </div>
+                                    <div class="row main-cont-wthree-2 mt-5">
+                                        <div class="col-lg-6 feature-grid-right">
+                                            <h1 class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Cupiditate nobis nostrum voluptate et labore dolorem dolore qui commodi
+                                                iusto, magnam reprehenderit dignissimos voluptatum nihil sit ad officia
+                                                rerum aspernatur eaque?</h1>
+                                            <!-- <img src="assets/images/s2.png" class="img-fluid img-shadow" alt="services"> -->
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <!-- contact form -->
+                                            <form class="pb-2">
+                                                <div class="col gx-5 mb-4">
+                                                    <div class="pb-4">
+                                                        <input type="text" name="nombre" id="nombre"
+                                                            placeholder="Nombre" class="form-control py-4" required="">
+                                                    </div>
+                                                    <div class="pb-4">
+                                                        <input type="email" name="email" id="email"
+                                                            placeholder="Correo electrónico" class="form-control py-4"
+                                                            required="">
+                                                    </div>
+                                                    <div class="pb-2">
+                                                        <input type="tel" name="Celular" id="Celular"
+                                                            placeholder="Celular" class="form-control py-4" required="">
+                                                    </div>
+                                                </div>
+                                                <div class="pb-4">
+                                                    <textarea class="p-4 form-control contact-textarea" name="mensaje"
+                                                        id="mensaje" placeholder="Escribe aquí tu mensaje"
+                                                        required=""></textarea>
+                                                </div>
+                                                <div class="text-left py-2">
+                                                    <input type="checkbox" id="chkTyc" name="chkTyc"
+                                                        required="required">
+                                                    <span>
+                                                        Acepto <a href="./politicas-de-tratamiento-de-datos.html"
+                                                            target="_blank">políticas de tratamiento de datos</a>
+                                                    </span>
+                                                </div>
+                                                <div class="pb-4">
+                                                    <div class="g-recaptcha "
+                                                        data-sitekey="6LfRpIsaAAAAADnQrjSVqFCswlmx9Lsp6fKlTVlW">
+                                                        <div style="width: 304px; height: 78px;">
+                                                            <div><iframe title="reCAPTCHA"
+                                                                    src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LfRpIsaAAAAADnQrjSVqFCswlmx9Lsp6fKlTVlW&amp;co=aHR0cHM6Ly9rb2RpZ29mdWVudGUuY29tOjQ0Mw..&amp;hl=es&amp;v=wqcyhEwminqmAoT8QO_BkXCr&amp;size=normal&amp;cb=v1sm79shpssc"
+                                                                    width="304" height="78" role="presentation"
+                                                                    name="a-9cq34mq9zpb8" frameborder="0" scrolling="no"
+                                                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                                            </div><textarea id="g-recaptcha-response"
+                                                                name="g-recaptcha-response" class="g-recaptcha-response"
+                                                                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                                        </div><iframe style="display: none;"></iframe>
+                                                    </div>
+                                                    <button id="sendMailContac" name="sendMailContac"
+                                                        class="btn btn-style btn-primary mt-2">Enviar</button>
+                                                </div>
+                                            </form>
+                                            <!-- //contact form -->
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <!-- contact form -->
-                                    <form class="pb-2">
-                                        <div class="col gx-5 mb-4">
-                                            <div class="pb-4">
-                                                <input type="text" name="nombre" id="nombre" placeholder="Nombre"
-                                                    class="form-control py-4" required="">
-                                            </div>
-                                            <div class="pb-4">
-                                                <input type="email" name="email" id="email"
-                                                    placeholder="Correo electrónico" class="form-control py-4"
-                                                    required="">
-                                            </div>
-                                            <div class="pb-2">
-                                                <input type="tel" name="Celular" id="Celular" placeholder="Celular"
-                                                    class="form-control py-4" required="">
-                                            </div>
-                                        </div>
-                                        <div class="pb-4">
-                                            <textarea class="p-4 form-control contact-textarea" name="mensaje"
-                                                id="mensaje" placeholder="Escribe aquí tu mensaje"
-                                                required=""></textarea>
-                                        </div>
-                                        <div class="text-left py-2">
-                                            <input type="checkbox" id="chkTyc" name="chkTyc" required="required">
-                                            <span>
-                                                Acepto <a href="./politicas-de-tratamiento-de-datos.html"
-                                                    target="_blank">políticas de tratamiento de datos</a>
-                                            </span>
-                                        </div>
-                                        <div class="pb-4">
-                                            <div class="g-recaptcha "
-                                                data-sitekey="6LfRpIsaAAAAADnQrjSVqFCswlmx9Lsp6fKlTVlW">
-                                                <div style="width: 304px; height: 78px;">
-                                                    <div><iframe title="reCAPTCHA"
-                                                            src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LfRpIsaAAAAADnQrjSVqFCswlmx9Lsp6fKlTVlW&amp;co=aHR0cHM6Ly9rb2RpZ29mdWVudGUuY29tOjQ0Mw..&amp;hl=es&amp;v=wqcyhEwminqmAoT8QO_BkXCr&amp;size=normal&amp;cb=v1sm79shpssc"
-                                                            width="304" height="78" role="presentation"
-                                                            name="a-9cq34mq9zpb8" frameborder="0" scrolling="no"
-                                                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-                                                    </div><textarea id="g-recaptcha-response"
-                                                        name="g-recaptcha-response" class="g-recaptcha-response"
-                                                        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-                                                </div><iframe style="display: none;"></iframe>
-                                            </div>
-                                            <button id="sendMailContac" name="sendMailContac"
-                                                class="btn btn-style btn-primary mt-2">Enviar</button>
-                                        </div>
-                                    </form>
-                                    <!-- //contact form -->
-                                </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </section>
             </main>
